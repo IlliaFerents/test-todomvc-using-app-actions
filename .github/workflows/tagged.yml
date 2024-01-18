@@ -66,7 +66,7 @@ jobs:
       # https://github.com/cypress-io/github-action
       - name: Run sanity tests
         if: ${{ github.event.inputs.sanity == 'true' }}
-        uses: cypress-io/github-action@v2
+        uses: cypress-io/github-action@v6
         with:
           install: false
           env: grepTags=@sanity
